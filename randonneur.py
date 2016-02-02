@@ -10,8 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def mafonction(t, omega = 1., tau = 10.):
-    
-   
+    print "coucou\n"    
     return np.exp(-t / tau) * np.sin(omega * t) #carré de x (**)
 
     #[] correspond à une liste 

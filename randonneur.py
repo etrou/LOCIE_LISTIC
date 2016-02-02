@@ -22,7 +22,9 @@ a = mafonction(t)
 
 plt.figure("Notre figure")
 plt.clf() # purge la figure
-plt.plot(t,a, color="b", label = "$\omega = {0}$".format(omega[1]))
+for i in range (len(omega)):
+    a=mafonction(t, omega[i])
+    plt.plot(t,a, color="b", label = "$\omega = {0}$".format(omega[i]))
 # plt.plot(t,a, marker = "+", color="m", linewidth=3, linestyle="--")
 # plt.plot(t,a, "*c--" linewidth=3) 
 plt.legend()
